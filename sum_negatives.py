@@ -3,7 +3,7 @@ def sum_negatives_between_max_min(arr):
     Возвращает сумму отрицательных элементов между первыми вхождениями
     максимального и минимального элементов массива.
     """
-
+    # Случай: пользователь ввёл недостаточное количество элементов последовательности
     if len(arr) < 3:
         return 0, "not_enough_elements"
 
@@ -13,19 +13,23 @@ def sum_negatives_between_max_min(arr):
     index_min = arr.index(value_min)
     index_max = arr.index(value_max)
 
-    # Новый случай: максимум и минимум рядом
+    # Случай: максимум и минимум рядом
     if abs(index_min - index_max) == 1:
         return 0, "max_min_adjacent"
 
     start_pos = min(index_min, index_max) + 1
     end_pos = max(index_min, index_max)
 
+    # Случай: наименьший элемент размещён после наибольшего.
     if start_pos >= end_pos:
         return 0, "no_elements"
 
+    # Выделяем подмассив между индексами max и min
     interval_slice = arr[start_pos:end_pos]
+    # Фильтруем только отрицательные числа из полученного среза
     negatives_in_slice = [num for num in interval_slice if num < 0]
 
+    # Случай: Нет отрицательных чисел между max и min
     if not negatives_in_slice:
         return 0, "no_negatives"
 
