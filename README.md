@@ -14,11 +14,11 @@
 - Python 3.x
 
 ### Установка:
-```bash
+```conscole
 git clone https://github.com/RunCatRun/sum-between-max-min.git
 cd sum-between-max-min
 python sum_negatives.py
-
+```
 
 
 ###✅ Пример работы 
