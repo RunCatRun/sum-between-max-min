@@ -39,24 +39,24 @@ sum-between-max-min/
 - Python 3.x
 
 ### Установка:
-```conscole
+```console
 git clone https://github.com/RunCatRun/sum-between-max-min.git
 cd sum-between-max-min
 python sum_negatives.py
 ```
 ### Запуск полной версии:
-```conscole
+```console
 python sum_negatives.py
 ```
 
 ### Запуск упрощённой версии: 
-```conscole
+```console
 python sum_negatives_simple.py
 ```
 
 
 ## ✅ Пример работы полной версии:
-```conscole
+```console
 Введите целые числа через пробел (не менее трёх чисел): 5 -1 -4 2 -5 6 -2 0
 🏁 Результат: 0
 ℹ️ Примечание: между максимальным и минимальным элементами нет чисел.
