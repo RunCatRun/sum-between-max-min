@@ -36,7 +36,7 @@ sum-between-max-min/
 ## 🚀 Как запустить
 
 ### Требования:
-- Python 3.x
+- Python 3.10 или выше
 
 ### Установка:
 ```console
